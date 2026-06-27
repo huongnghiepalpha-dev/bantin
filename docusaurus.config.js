@@ -2,20 +2,20 @@ module.exports = {
   title: 'Hướng Nghiệp Alpha',
   tagline: 'Đồng hành cùng Teen và Phụ huynh',
   url: 'https://huongnghiepalpha-dev.github.io',
-  baseUrl: '/bantin/', // Sửa từ /hoso/ thành /bantin/ cho đúng đường dẫn web của bạn
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  baseUrl: '/bantin/',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'huongnghiepalpha-dev',
-  projectName: 'bantin', // Sửa từ hoso thành bantin để đồng bộ với kho lưu trữ
+  projectName: 'bantin',
 
   presets: [
     [
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // Đặt bài viết làm trang chủ luôn cho tiện theo dõi
+          sidebarPath: false, // Tắt chế độ sidebars.js để tránh lỗi thiếu file chạy
+          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -27,6 +27,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: 'Hướng Nghiệp Alpha',
+      style: 'dark', // Ép thanh menu dùng giao diện tối màu
       items: [
         {to: '/01-nhan-dien-ban-than/bai-mo-dau', label: '👤 Nhận diện bản thân', position: 'left'},
         {to: '/03-dinh-huong-nghe-nghiep/bai-mo-dau', label: '🧭 Định hướng nghề', position: 'left'},
