@@ -1,9 +1,9 @@
 module.exports = {
   title: 'Hướng Nghiệp Alpha',
-  taggline: 'Đồng hành cùng Teen và Phụ huynh',
+  tagline: 'Đồng hành cùng Teen và Phụ huynh',
   url: 'https://huongnghiepalpha-dev.github.io',
   baseUrl: '/hoso/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'huongnghiepalpha-dev',
@@ -12,15 +12,15 @@ module.exports = {
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // Đặt làm trang chủ chính luôn
+          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
