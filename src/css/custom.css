@@ -1,0 +1,28 @@
+:root {
+  --ifm-color-primary: #112351;
+  --ifm-color-primary-dark: #0f1f48;
+  --ifm-color-primary-darker: #0e1e44;
+  --ifm-color-primary-darkest: #0b1838;
+  --ifm-color-primary-light: #152b63;
+  --ifm-color-primary-lighter: #172f6d;
+  --ifm-color-primary-lightest: #1e3d8e;
+  --alpha-accent-yellow: #F9C110;
+  --alpha-accent-orange: #F39200;
+
+  /* Định hình thanh điều hướng */
+  --ifm-navbar-background-color: #112351;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: var(--alpha-accent-yellow);
+}
+
+.navbar {
+  background-color: #112351 !important;
+}
+
+.navbar__brand, .navbar__item {
+  color: #ffffff !important;
+}
+
+.navbar__item:hover, .navbar__link--active {
+  color: var(--alpha-accent-yellow) !important;
+}
