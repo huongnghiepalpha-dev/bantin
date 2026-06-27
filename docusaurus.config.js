@@ -2,12 +2,12 @@ module.exports = {
   title: 'Hướng Nghiệp Alpha',
   tagline: 'Đồng hành cùng Teen và Phụ huynh',
   url: 'https://huongnghiepalpha-dev.github.io',
-  baseUrl: '/hoso/',
+  baseUrl: '/bantin/', // Sửa từ /hoso/ thành /bantin/ cho đúng đường dẫn web của bạn
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'huongnghiepalpha-dev',
-  projectName: 'hoso',
+  projectName: 'bantin', // Sửa từ hoso thành bantin để đồng bộ với kho lưu trữ
 
   presets: [
     [
@@ -15,7 +15,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          routeBasePath: '/', // Đặt bài viết làm trang chủ luôn cho tiện theo dõi
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
