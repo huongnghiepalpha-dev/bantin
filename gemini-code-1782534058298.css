@@ -1,0 +1,35 @@
+:root {
+  /* Màu xanh đậm Alpha chủ đạo */
+  --ifm-color-primary: #112351;
+  --ifm-color-primary-dark: #0f1f48;
+  --ifm-color-primary-darker: #0e1e44;
+  --ifm-color-primary-darkest: #0b1838;
+  --ifm-color-primary-light: #152b63;
+  --ifm-color-primary-lighter: #172f6d;
+  --ifm-color-primary-lightest: #1e3d8e;
+  
+  /* Màu vàng cam Alpha điểm nhấn */
+  --alpha-accent-yellow: #F9C110;
+  --alpha-accent-orange: #F39200;
+
+  /* Cấu hình thanh menu (Navbar) nền xanh đậm, chữ trắng */
+  --ifm-navbar-background-color: #112351;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: var(--alpha-accent-yellow);
+}
+
+/* Định dạng chữ menu trắng và đổi sang vàng Alpha khi di chuột vào (hover) */
+.navbar__item { 
+  color: #ffffff !important; 
+  font-weight: 500; 
+}
+.navbar__item:hover, .navbar__link--active { 
+  color: var(--alpha-accent-yellow) !important; 
+}
+
+/* Màu sắc thanh menu dọc bên trái (Sidebar) khi đọc bài */
+.menu__link--active {
+  background-color: rgba(249, 193, 16, 0.12) !important;
+  color: #112351 !important;
+  font-weight: bold;
+}
